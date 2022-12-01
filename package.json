@@ -33,6 +33,7 @@
     "test": "npm-run-all build -lp test:**",
     "test:lint": "tslint -c tslint.yml -p tsconfig.json -e test",
     "test:unit": "mocha --opts test/mocha.opts 'test/*.ts'",
+    "test:individual": "mocha --opts test/mocha.opts",
     "test:format": "yarn run prettier:run --list-different",
     "fix": "npm-run-all -lp fix:**",
     "fix:format": "yarn run prettier:run --write",
